@@ -2,7 +2,7 @@
 
 
 ## configure dns servers
-echo "nameserver 1.1.1.1" | sudo tee /etc/resolv.conf ; \
+> echo "nameserver 1.1.1.1" | sudo tee /etc/resolv.conf ; \
     echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/dont-prompt-$USER-for-sudo-password ; \
     sudo apt update ; \
     sudo apt install -y \
@@ -17,7 +17,7 @@ echo "nameserver 1.1.1.1" | sudo tee /etc/resolv.conf ; \
 
 
 # installing docker
-sudo apt update ; \
+> sudo apt update ; \
     sudo apt install -y \
     ca-certificates \
     curl \
