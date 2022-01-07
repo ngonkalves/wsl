@@ -6,6 +6,8 @@
     echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/dont-prompt-$USER-for-sudo-password ; \\\
     sudo apt update ; \\\
     sudo apt install -y \\\
+        curl \\\
+        wget \\\
         apt-transport-https \\\
         ca-certificates \\\
         unzip ; \\\
@@ -72,3 +74,7 @@ source: https://docs.docker.com/engine/install/debian/
 
 ## check all services status
 > sudo service --status-all
+
+
+## other sources
+Troubleshooting: https://docs.microsoft.com/en-us/windows/wsl/troubleshooting
