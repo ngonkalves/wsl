@@ -49,13 +49,13 @@ source: https://docs.docker.com/engine/install/debian/
 
 
 ## list distros
-> wsl --list
-> wsl --list --running
+> wsl --list \
+ wsl --list --running
 
 
 ## terminate/shutdown distro
-> wsl --terminate Debian 
-> wsl --shutdown
+> wsl --terminate Debian \
+ wsl --shutdown
 
 
 ## update wsl (run as administrator)
